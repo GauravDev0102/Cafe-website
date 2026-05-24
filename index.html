@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Brewed Haven – Artisan Café in Bengaluru. Hand-crafted coffees, fresh pastries, and warm vibes."/>
+<title>Brewed Haven – Artisan Café</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23c9963a'/%3E%3Cpath d='M30 65 Q50 30 70 65' stroke='%23080808' stroke-width='8' fill='none'/%3E%3C/svg%3E"/>
+
+<!-- OpenGraph for social sharing -->
+<meta property="og:title" content="Brewed Haven – Artisan Café"/>
+<meta property="og:description" content="Single-origin coffees, hand-crafted by passionate baristas. Visit us in Koramangala, Bengaluru."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://brewedhaven.in"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=85"/>
+<meta property="og:site_name" content="Brewed Haven"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Brewed Haven – Artisan Café"/>
+<meta name="twitter:description" content="Single-origin coffees, hand-crafted by passionate baristas in Bengaluru."/>
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=85"/>
+
+<!-- Theme color -->
+<meta name="theme-color" content="#c9963a"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="cafe.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cur" id="cur-dot"></div>
+<div class="cur" id="cur-ring"></div>
+
+<!-- ████ NAVBAR ████ -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Brewed<span>Haven</span></a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#instagram">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#reservation" class="nav-reserve">Reserve a Table</a>
+  <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mob-drawer" id="drawer">
+  <a href="#hero"        onclick="closeMob()">Home</a>
+  <a href="#about"       onclick="closeMob()">About</a>
+  <a href="#menu"        onclick="closeMob()">Menu</a>
+  <a href="#reviews"     onclick="closeMob()">Reviews</a>
+  <a href="#instagram"   onclick="closeMob()">Gallery</a>
+  <a href="#contact"     onclick="closeMob()">Contact</a>
+  <a href="#reservation" onclick="closeMob()" class="mob-cta">Reserve a Table</a>
+</div>
+
+<!-- ████ HERO ████ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ov"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-c">
+    <div class="hero-badge"><div class="badge-dot"></div><span class="badge-txt">Open Now · 7 AM – 10 PM</span></div>
+    <h1 class="hero-h1">Where <em>Coffee</em><br>Becomes an<br><span class="lt">Obsession</span></h1>
+    <p class="hero-sub">Single-origin beans, hand-crafted by baristas who care deeply about every cup they pull.</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-g">Browse Menu →</a>
+      <a href="#reservation" class="btn-gh">Book a Table</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="s-line"></div></div>
+</section>
+
+<!-- ████ STATS ████ -->
+<div class="stats">
+  <div class="stat reveal d1"><div class="stat-n">12+</div><div class="stat-l">Signature Brews</div></div>
+  <div class="stat reveal d2"><div class="stat-n">40+</div><div class="stat-l">Menu Items</div></div>
+  <div class="stat reveal d3"><div class="stat-n">10yr</div><div class="stat-l">In Business</div></div>
+  <div class="stat reveal d4"><div class="stat-n">4.9★</div><div class="stat-l">Avg Rating</div></div>
+</div>
+
+<!-- ████ ABOUT ████ -->
+<section id="about">
+  <div class="about-imgs rl">
+    <img class="aimg-a" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=85" alt="Barista" crossorigin="anonymous"/>
+    <img class="aimg-b" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=85" alt="Coffee" crossorigin="anonymous"/>
+    <div class="a-tag">Est.<br><small>2015</small></div>
+  </div>
+  <div class="about-body rr">
+    <div class="eyebrow">Our Story</div>
+    <h2 class="sec-title">Rooted in <em>Craft</em>,<br>Driven by Flavour</h2>
+    <div class="a-div"></div>
+    <p>Brewed Haven started as a <strong>weekend pop-up stall</strong> in 2015. Today it's a full café powered by a team of passionate baristas obsessed with quality.</p>
+    <p>We source our beans directly from <strong>Coorg, Araku Valley, and Wayanad</strong> — building relationships with farmers who share our commitment to sustainable farming.</p>
+    <ul class="a-checks">
+      <li>100% ethically sourced single-origin beans</li>
+      <li>Freshly baked pastries made every morning</li>
+      <li>Free Wi-Fi & quiet corners for focused work</li>
+      <li>Private dining room available for events</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ████ MENU ████ -->
+<section id="menu">
+  <div class="eyebrow reveal">What We Serve</div>
+  <h2 class="sec-title reveal">Our <em>Menu</em></h2>
+  <div class="menu-tabs reveal">
+    <button class="tab act" onclick="showTab('coffee',this)">☕ Coffees</button>
+    <button class="tab" onclick="showTab('food',this)">🥐 Food</button>
+    <button class="tab" onclick="showTab('cold',this)">🧊 Cold Drinks</button>
+    <button class="tab" onclick="showTab('dessert',this)">🍰 Desserts</button>
+  </div>
+
+  <div class="mpanel act" id="tab-coffee"><div class="mgrid">
+    <div class="mcard reveal d1"><div class="cimg"><img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=600&q=80" alt="Espresso" crossorigin="anonymous"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">Classic Espresso</span><span class="cprice">₹120</span></div><p class="cdesc">Double shot of our signature Coorg blend. Intense, rich and unapologetically bold.</p><div class="cfoot"><span class="ccal">80 kcal</span><button class="cadd" onclick="orderWA('Classic Espresso')">+</button></div></div></div>
+    <div class="mcard reveal d2"><div class="cimg"><img src="https://images.unsplash.com/photo-1534040385115-33dcb3acba5b?w=600&q=80" alt="Caramel Latte"/><div class="cov"></div><span class="cbadge bn">✨ New</span></div><div class="cbody"><div class="ctop"><span class="cname">Caramel Latte</span><span class="cprice">₹200</span></div><p class="cdesc">Espresso, steamed milk, house caramel sauce and a swirl of whipped cream.</p><div class="cfoot"><span class="ccal">210 kcal</span><button class="cadd" onclick="orderWA('Caramel Latte')">+</button></div></div></div>
+    <div class="mcard reveal d3"><div class="cimg"><img src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?w=600&q=80" alt="Dark Mocha"/><div class="cov"></div></div><div class="cbody"><div class="ctop"><span class="cname">Dark Mocha</span><span class="cprice">₹190</span></div><p class="cdesc">Rich espresso meets Belgian dark chocolate and perfectly steamed velvety milk.</p><div class="cfoot"><span class="ccal">195 kcal</span><button class="cadd" onclick="orderWA('Dark Mocha')">+</button></div></div></div>
+    <div class="mcard reveal d1"><div class="cimg"><img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?w=600&q=80" alt="Cappuccino"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">Creamy Cappuccino</span><span class="cprice">₹160</span></div><p class="cdesc">Equal parts espresso, steamed milk and thick velvety foam. The morning essential.</p><div class="cfoot"><span class="ccal">120 kcal</span><button class="cadd" onclick="orderWA('Cappuccino')">+</button></div></div></div>
+    <div class="mcard reveal d2"><div class="cimg"><img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600&q=80" alt="Filter Coffee"/><div class="cov"></div><span class="cbadge bv">🌿 Veg</span></div><div class="cbody"><div class="ctop"><span class="cname">South Indian Filter</span><span class="cprice">₹90</span></div><p class="cdesc">Traditional decoction with full-cream milk. Served in a classic tumbler-dabara set.</p><div class="cfoot"><span class="ccal">95 kcal</span><button class="cadd" onclick="orderWA('Filter Coffee')">+</button></div></div></div>
+    <div class="mcard reveal d3"><div class="cimg"><img src="https://images.unsplash.com/photo-1517959105821-eaf2591984ca?w=600&q=80" alt="Flat White"/><div class="cov"></div></div><div class="cbody"><div class="ctop"><span class="cname">Flat White</span><span class="cprice">₹180</span></div><p class="cdesc">Ristretto shots with silky microfoam milk — strong, smooth and perfectly balanced.</p><div class="cfoot"><span class="ccal">110 kcal</span><button class="cadd" onclick="orderWA('Flat White')">+</button></div></div></div>
+  </div></div>
+
+  <div class="mpanel" id="tab-food"><div class="mgrid">
+    <div class="mcard reveal d1"><div class="cimg"><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80" alt="Croissant" crossorigin="anonymous"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">Butter Croissant</span><span class="cprice">₹120</span></div><p class="cdesc">Freshly baked every morning. Flaky, golden and impossibly buttery.</p><div class="cfoot"><span class="ccal">320 kcal</span><button class="cadd" onclick="orderWA('Butter Croissant')">+</button></div></div></div>
+    <div class="mcard reveal d2"><div class="cimg"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Avocado Toast"/><div class="cov"></div><span class="cbadge bv">🌿 Veg</span></div><div class="cbody"><div class="ctop"><span class="cname">Avocado Toast</span><span class="cprice">₹220</span></div><p class="cdesc">Sourdough, smashed avo, cherry tomatoes, feta, chilli flakes and micro herbs.</p><div class="cfoot"><span class="ccal">280 kcal</span><button class="cadd" onclick="orderWA('Avocado Toast')">+</button></div></div></div>
+    <div class="mcard reveal d3"><div class="cimg"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Pancakes"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">Fluffy Pancakes</span><span class="cprice">₹250</span></div><p class="cdesc">Stack of 3 with fresh berries, maple syrup and clotted cream.</p><div class="cfoot"><span class="ccal">450 kcal</span><button class="cadd" onclick="orderWA('Pancakes')">+</button></div></div></div>
+    <div class="mcard reveal d1"><div class="cimg"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80" alt="Club Sandwich"/><div class="cov"></div></div><div class="cbody"><div class="ctop"><span class="cname">Grilled Club</span><span class="cprice">₹280</span></div><p class="cdesc">Triple-decker with grilled chicken, lettuce, tomato, cheddar and house mayo.</p><div class="cfoot"><span class="ccal">520 kcal</span><button class="cadd" onclick="orderWA('Club Sandwich')">+</button></div></div></div>
+  </div></div>
+
+  <div class="mpanel" id="tab-cold"><div class="mgrid">
+    <div class="mcard reveal d1"><div class="cimg"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold Brew"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">Cold Brew</span><span class="cprice">₹200</span></div><p class="cdesc">Steeped 18 hours. Smooth, low-acid and served over ice with a milk float.</p><div class="cfoot"><span class="ccal">15 kcal</span><button class="cadd" onclick="orderWA('Cold Brew')">+</button></div></div></div>
+    <div class="mcard reveal d2"><div class="cimg"><img src="https://images.unsplash.com/photo-1575485671595-d27b47e0e19f?w=600&q=80" alt="Iced Matcha"/><div class="cov"></div><span class="cbadge bn">✨ New</span></div><div class="cbody"><div class="ctop"><span class="cname">Iced Matcha Latte</span><span class="cprice">₹220</span></div><p class="cdesc">Ceremonial-grade matcha, oat milk, touch of honey. Bright and earthy.</p><div class="cfoot"><span class="ccal">140 kcal</span><button class="cadd" onclick="orderWA('Iced Matcha')">+</button></div></div></div>
+    <div class="mcard reveal d3"><div class="cimg"><img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=600&q=80" alt="Mango Cooler"/><div class="cov"></div><span class="cbadge bv">🌿 Veg</span></div><div class="cbody"><div class="ctop"><span class="cname">Mango Passion Cooler</span><span class="cprice">₹180</span></div><p class="cdesc">Fresh mango, passion fruit, mint, sparkling water. Summer in a glass.</p><div class="cfoot"><span class="ccal">120 kcal</span><button class="cadd" onclick="orderWA('Mango Cooler')">+</button></div></div></div>
+  </div></div>
+
+  <div class="mpanel" id="tab-dessert"><div class="mgrid">
+    <div class="mcard reveal d1"><div class="cimg"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Cheesecake"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">NY Cheesecake</span><span class="cprice">₹220</span></div><p class="cdesc">Thick baked cheesecake on a graham cracker base, topped with berry compote.</p><div class="cfoot"><span class="ccal">380 kcal</span><button class="cadd" onclick="orderWA('NY Cheesecake')">+</button></div></div></div>
+    <div class="mcard reveal d2"><div class="cimg"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Tiramisu"/><div class="cov"></div></div><div class="cbody"><div class="ctop"><span class="cname">Classic Tiramisu</span><span class="cprice">₹240</span></div><p class="cdesc">Ladyfingers soaked in espresso, mascarpone cream and premium cocoa powder.</p><div class="cfoot"><span class="ccal">340 kcal</span><button class="cadd" onclick="orderWA('Tiramisu')">+</button></div></div></div>
+    <div class="mcard reveal d3"><div class="cimg"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80" alt="Brownie"/><div class="cov"></div><span class="cbadge bh">🔥 Bestseller</span></div><div class="cbody"><div class="ctop"><span class="cname">Walnut Brownie</span><span class="cprice">₹150</span></div><p class="cdesc">Fudgy dark-chocolate brownie with toasted walnuts. Best served warm.</p><div class="cfoot"><span class="ccal">290 kcal</span><button class="cadd" onclick="orderWA('Walnut Brownie')">+</button></div></div></div>
+  </div></div>
+</section>
+
+<!-- ████ SPECIAL ████ -->
+<div class="special-s">
+  <div class="sp-inner">
+    <div class="sp-img rl"><img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=900&q=85" alt="Choco Hazelnut Latte"/><div class="sp-ribbon">Today's Special</div></div>
+    <div class="sp-text rr">
+      <div class="eyebrow">Limited Daily</div>
+      <h2 class="sec-title">Choco Hazelnut<br><em>Latte</em></h2>
+      <span class="sp-price">₹180 <s>₹240</s></span>
+      <p>Rich espresso, steamed milk, house hazelnut syrup and a generous dark chocolate drizzle. Available until 6 PM or sold out.</p>
+      <div class="sp-meta">
+        <div class="sp-mi"><strong>280ml</strong><span>Serving Size</span></div>
+        <div class="sp-mi"><strong>220</strong><span>Calories</span></div>
+        <div class="sp-mi"><strong>Hot / Iced</strong><span>Available As</span></div>
+      </div>
+      <button class="btn-g" onclick="orderWA('Choco Hazelnut Latte special (₹180 offer)')">Order This Now →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ████ RESERVATION ████ -->
+<section id="reservation">
+  <div class="eyebrow reveal">Book Ahead</div>
+  <h2 class="sec-title reveal">Reserve a <em>Table</em></h2>
+  <div class="res-wrap">
+    <div class="res-info rl">
+      <h3>Why Book in Advance?</h3>
+      <div class="res-feat">
+        <div class="rf"><div class="rf-icon">🪑</div><div class="rf-body"><strong>Guaranteed Seating</strong><span>Especially busy on weekends and evenings — book early to secure your spot.</span></div></div>
+        <div class="rf"><div class="rf-icon">🎂</div><div class="rf-body"><strong>Special Occasions</strong><span>Birthday décor, custom cakes and personalised menus available on request.</span></div></div>
+        <div class="rf"><div class="rf-icon">💼</div><div class="rf-body"><strong>Group & Corporate</strong><span>We accommodate groups up to 20. Private room available for meetings.</span></div></div>
+        <div class="rf"><div class="rf-icon">📞</div><div class="rf-body"><strong>Instant Confirmation</strong><span>You'll receive a WhatsApp confirmation within 15 minutes of booking.</span></div></div>
+      </div>
+      <div class="res-hours">
+        <h4>Opening Hours</h4>
+        <div class="rh-row"><span>Monday – Friday</span><span>7:00 AM – 10:00 PM</span></div>
+        <div class="rh-row"><span>Saturday</span><span>8:00 AM – 11:00 PM</span></div>
+        <div class="rh-row"><span>Sunday</span><span>8:00 AM – 11:00 PM</span></div>
+        <div class="rh-row"><span>Public Holidays</span><span>9:00 AM – 9:00 PM</span></div>
+      </div>
+    </div>
+    <div class="res-form-wrap rr">
+      <h3>Make a Reservation</h3>
+      <p>Fill in your details and we'll confirm your table within 15 minutes.</p>
+      <!--
+       IMPORTANT: For demo to work, create a free Formspree account at https://formspree.io
+       and replace 'YOUR_FORM_ID' below with your actual form ID.
+       The form will still work via WhatsApp fallback even without Formspree configured.
+    -->
+      <form id="resForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleRes(event)">
+        <input type="hidden" name="_subject" value="New Table Reservation – Brewed Haven"/>
+        <div class="frow">
+          <div class="fg"><label>First Name *</label><input type="text" name="first_name" placeholder="Priya" required/></div>
+          <div class="fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Sharma"/></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Phone Number *</label><input type="tel" name="phone" placeholder="+91 98765 43210" required/></div>
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="priya@email.com"/></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label>Date *</label><input type="date" name="date" id="resDate" required/></div>
+          <div class="fg">
+            <label>Time *</label>
+            <select name="time" required>
+              <option value="">Select a time</option>
+              <option>07:00 AM</option><option>07:30 AM</option><option>08:00 AM</option>
+              <option>08:30 AM</option><option>09:00 AM</option><option>09:30 AM</option>
+              <option>10:00 AM</option><option>10:30 AM</option><option>11:00 AM</option>
+              <option>11:30 AM</option><option>12:00 PM</option><option>12:30 PM</option>
+              <option>01:00 PM</option><option>01:30 PM</option><option>02:00 PM</option>
+              <option>02:30 PM</option><option>03:00 PM</option><option>03:30 PM</option>
+              <option>04:00 PM</option><option>04:30 PM</option><option>05:00 PM</option>
+              <option>05:30 PM</option><option>06:00 PM</option><option>06:30 PM</option>
+              <option>07:00 PM</option><option>07:30 PM</option><option>08:00 PM</option>
+              <option>08:30 PM</option><option>09:00 PM</option>
+            </select>
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fg">
+            <label>Guests *</label>
+            <select name="guests" required>
+              <option value="">No. of guests</option>
+              <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option>
+              <option>4 Guests</option><option>5 Guests</option><option>6 Guests</option>
+              <option>7–10 Guests</option><option>11–15 Guests</option><option>16–20 Guests</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Occasion</label>
+            <select name="occasion">
+              <option value="">Select (optional)</option>
+              <option>Birthday</option><option>Anniversary</option><option>Business Meeting</option>
+              <option>Date Night</option><option>Casual Visit</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label>Special Requests</label><textarea name="requests" placeholder="Dietary requirements, décor wishes, accessibility needs…"></textarea></div>
+        <p class="res-note">By submitting you agree to our <a href="#">privacy policy</a>. We'll confirm via WhatsApp or call within 15 mins.</p>
+        <div class="form-error" id="resError">Please fill in all required fields correctly.</div>
+        <button type="submit" class="btn-submit" id="resBtn">Confirm Reservation →</button>
+        <div class="form-success" id="resSuccess">🎉 Reservation received! We'll confirm your table on WhatsApp shortly.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ████ REVIEWS ████ -->
+<section id="reviews">
+  <div class="reviews-header">
+    <div>
+      <div class="eyebrow reveal">What Guests Say</div>
+      <h2 class="sec-title reveal">Real <em>Reviews</em></h2>
+    </div>
+    <div class="rating-badge reveal">
+      <div class="r-big">4.9</div>
+      <div><div class="r-stars">★★★★★</div><div class="r-count">Based on 1,240+ reviews</div></div>
+    </div>
+  </div>
+  <div class="reviews-slider-wrap">
+    <div class="reviews-grid" id="reviewsGrid">
+
+      <div class="rcard reveal d1">
+        <div class="rc-top">
+          <div class="rc-user">
+            <img class="rc-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Ananya"/>
+            <div><div class="rc-name">Ananya R.</div><div class="rc-date">2 weeks ago</div></div>
+          </div>
+          <div class="rc-stars">★★★★★</div>
+        </div>
+        <p class="rc-text">Honestly the best café in Bengaluru. The flat white is absolutely divine — silky, strong, just perfect. The interiors are dark and moody in the best way. Came for the coffee, stayed three hours.</p>
+        <div class="rc-platform">📍 Google Reviews</div>
+      </div>
+
+      <div class="rcard reveal d2">
+        <div class="rc-top">
+          <div class="rc-user">
+            <img class="rc-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Karan"/>
+            <div><div class="rc-name">Karan M.</div><div class="rc-date">1 month ago</div></div>
+          </div>
+          <div class="rc-stars">★★★★★</div>
+        </div>
+        <p class="rc-text">Reserved a table for our anniversary and the team went above and beyond. Fresh flowers, a handwritten note, and complimentary dessert. The tiramisu is out of this world. Will absolutely be back!</p>
+        <div class="rc-platform">📍 Google Reviews</div>
+      </div>
+
+      <div class="rcard reveal d3">
+        <div class="rc-top">
+          <div class="rc-user">
+            <img class="rc-avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Divya"/>
+            <div><div class="rc-name">Divya S.</div><div class="rc-date">3 weeks ago</div></div>
+          </div>
+          <div class="rc-stars">★★★★★</div>
+        </div>
+        <p class="rc-text">The cold brew is worth every rupee. I've tried cold brews across the city and nothing comes close. The 18-hour steep really makes a difference. Staff is super warm and knowledgeable about the beans.</p>
+        <div class="rc-platform">📍 Zomato</div>
+      </div>
+
+      <div class="rcard reveal d1">
+        <div class="rc-top">
+          <div class="rc-user">
+            <img class="rc-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Rohit"/>
+            <div><div class="rc-name">Rohit K.</div><div class="rc-date">5 days ago</div></div>
+          </div>
+          <div class="rc-stars">★★★★★</div>
+        </div>
+        <p class="rc-text">Used to think I wasn't a café person. Brewed Haven changed that. The avocado toast is actually incredible — generous portions, proper sourdough, and the cheese is so fresh. My WFH spot now.</p>
+        <div class="rc-platform">📍 Google Reviews</div>
+      </div>
+
+      <div class="rcard reveal d2">
+        <div class="rc-top">
+          <div class="rc-user">
+            <img class="rc-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&q=80" alt="Meera"/>
+            <div><div class="rc-name">Meera P.</div><div class="rc-date">2 months ago</div></div>
+          </div>
+          <div class="rc-stars">★★★★★</div>
+        </div>
+        <p class="rc-text">Brewed Haven is my go-to for every occasion. Brought clients for a breakfast meeting — they were blown away by the filter coffee. Quiet, stylish, excellent food. Makes you look good as a host!</p>
+        <div class="rc-platform">📍 Swiggy</div>
+      </div>
+
+      <div class="rcard reveal d3">
+        <div class="rc-top">
+          <div class="rc-user">
+            <img class="rc-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Aditya"/>
+            <div><div class="rc-name">Aditya V.</div><div class="rc-date">1 week ago</div></div>
+          </div>
+          <div class="rc-stars">★★★★★</div>
+        </div>
+        <p class="rc-text">The walnut brownie is criminally good. Ordered it warm with a scoop of vanilla ice cream — absolute heaven. The reservation was super smooth too, got a WhatsApp confirmation in under 10 minutes. 10/10.</p>
+        <div class="rc-platform">📍 Google Reviews</div>
+      </div>
+
+    </div>
+    <div class="rslider-btns">
+      <button class="rslider-btn" onclick="slideReviews(-1)">←</button>
+      <button class="rslider-btn" onclick="slideReviews(1)">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ████ INSTAGRAM GALLERY ████ -->
+<section id="instagram">
+  <div class="ig-header">
+    <div>
+      <div class="eyebrow reveal">Social</div>
+      <h2 class="sec-title reveal">Our <em>Instagram</em> Gallery</h2>
+    </div>
+    <a href="https://instagram.com/brewedhaven" target="_blank" class="ig-handle reveal">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      @brewedhaven
+    </a>
+  </div>
+
+  <div class="ig-grid reveal">
+    <div class="ig-cell tall">
+      <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500&q=80" alt="Coffee Beans" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&q=80" alt="Espresso" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1550614000-4b9519e02d48?w=400&q=80" alt="Croissant" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell wide">
+      <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=700&q=80" alt="Cake Slice" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1517701604599-bb29b5dd7359?w=400&q=80" alt="Iced Coffee" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1506117217486-b52f6e8a470b?w=400&q=80" alt="Waffles" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80" alt="Mousse" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&q=80" alt="Chocolate Cake" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+    <div class="ig-cell">
+      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&q=80" alt="Latte Art" crossorigin="anonymous"/>
+      <div class="ig-hover"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg><span>View Post</span></div>
+    </div>
+  </div>
+  <div class="ig-cta reveal">
+    <a href="https://instagram.com/brewedhaven" target="_blank" class="ig-follow">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      Follow @brewedhaven on Instagram
+    </a>
+  </div>
+</section>
+
+<!-- ████ CONTACT ████ -->
+<section id="contact">
+  <div class="eyebrow reveal">Get In Touch</div>
+  <h2 class="sec-title reveal">Visit Us or <em>Drop a Line</em></h2>
+  <div class="contact-wrap">
+    <div class="contact-left rl">
+      <h3>Find Brewed Haven</h3>
+      <div class="iblk"><div class="iico">📍</div><div><strong>Address</strong><p>12, MG Road, Koramangala<br>Bengaluru, Karnataka – 560034</p></div></div>
+      <div class="iblk"><div class="iico">🕐</div><div><strong>Hours</strong><p>Mon – Fri: 7:00 AM – 10:00 PM<br>Sat – Sun: 8:00 AM – 11:00 PM</p></div></div>
+      <div class="iblk"><div class="iico">📞</div><div><strong>Phone</strong><p>+91 98765 43210</p></div></div>
+      <div class="iblk"><div class="iico">✉️</div><div><strong>Email</strong><p>hello@brewedhaven.in</p></div></div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.375!2d77.6245!3d12.9352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1452b2e42b07%3A0x1!2sKoramangala%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" title="Brewed Haven"></iframe>
+      </div>
+    </div>
+    <div class="contact-right rr">
+      <h3>Send a Message</h3>
+      <p>Questions, feedback or catering enquiries — we're all ears.</p>
+      <!-- Replace YOUR_FORM_ID with your Formspree form ID -->
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleContact(event)">
+        <input type="hidden" name="_subject" value="Message via Website – Brewed Haven"/>
+        <div class="frow">
+          <div class="fg"><label>First Name *</label><input type="text" name="first_name" placeholder="Priya" required/></div>
+          <div class="fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Sharma"/></div>
+        </div>
+        <div class="fg"><label>Email *</label><input type="email" name="email" placeholder="priya@email.com" required/></div>
+        <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="+91 98765 43210"/></div>
+        <div class="fg">
+          <label>Subject</label>
+          <select name="subject">
+            <option value="">Select a topic</option>
+            <option>Table Reservation</option><option>Catering / Events</option>
+            <option>Feedback</option><option>General Enquiry</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message *</label><textarea name="message" placeholder="Tell us how we can help…" required></textarea></div>
+        <button type="submit" class="btn-submit" id="contactBtn">Send Message →</button>
+        <div class="form-success" id="contactSuccess">✅ Message sent! We'll reply within 24 hours.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ████ FOOTER ████ -->
+<footer>
+  <div class="ft">
+    <div class="fbrand">
+      <a href="#hero" class="flogo">Brewed<span>Haven</span></a>
+      <p>Artisan café rooted in craft, community and the pursuit of the perfect cup since 2015.</p>
+      <div class="fnl">
+        <p>Get weekly specials & events:</p>
+        <div class="fnl-row">
+          <input type="email" placeholder="your@email.com"/>
+          <button onclick="showToast('✅ Subscribed to weekly specials!','success')">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#menu">Hot Coffees</a></li>
+        <li><a href="#menu">Cold Drinks</a></li>
+        <li><a href="#menu">Food & Bites</a></li>
+        <li><a href="#menu">Desserts</a></li>
+        <li><a href="#menu">Specials</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">12, MG Road, Koramangala</a></li>
+        <li><a href="#">Bengaluru – 560034</a></li>
+        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+        <li><a href="mailto:hello@brewedhaven.in">hello@brewedhaven.in</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fb">
+    <p>© 2026 Brewed Haven. Crafted with ☕ & care in Bengaluru.</p>
+    <div class="soc-row">
+      <a href="https://instagram.com/brewedhaven" target="_blank" class="soc" title="Instagram">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://facebook.com/brewedhaven" target="_blank" class="soc" title="Facebook">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="#" onclick="orderWA();return false;" class="soc" title="WhatsApp">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<div class="wa">
+  <div class="wa-tip">Order on WhatsApp</div>
+  <a href="#" class="wa-btn" onclick="orderWA();return false;" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="cafe.js"></script>
+</body>
+</html>
